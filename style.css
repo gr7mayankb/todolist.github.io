@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Cormorant+Garamond:wght@300&family=Edu+NSW+ACT+Foundation&family=Ibarra+Real+Nova:wght@500&family=Oswald:wght@400;500&family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.title{
+    color: wheat;
+    margin: 30px 0;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+span{
+    color: red;
+}
+body{
+    background-color: rgba(0, 0, 0, 0.951);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
+
+.todo-list {
+    width: 29rem;
+    padding: 1rem;
+    box-shadow: 0 5px 30px rgb(255 255 255 / 75%);
+    border-radius: 26px;
+    background-color: rgba(245, 236, 236, 0.56);
+}
+
+
+.entered-list{
+    margin: 15px 4px 0 13px;
+    border: 2px solid rgba(12, 11, 11, 0.349);
+    border-radius: 12px;
+    width:24rem;
+    outline:none;
+    height: 1.4rem;
+    font-size: larger;
+    
+}
+.add-list{
+    border: none;
+    outline: none;
+    width: 44px;
+    border-radius: 5px;
+    font-size: 16px;
+    background-image: linear-gradient(#f3a5a3, red 65%);
+    /* background-image: linear-gradient(#B384C9, #391F5B 50%); */
+    height: 1.4rem;
+    color: white;
+    cursor: pointer;
+    /* opacity: .4; */
+    /* pointer-events: none; */
+    
+}
+.add-list:active {
+   box-shadow: 0 3px #666;
+  transform: translateY(3px);
+}
+
+.tasks{
+    width: 100%;
+    margin-top: 30px;
+}
+.item{
+   padding: 10px;
+   border-radius:10px;
+   box-shadow: 0 5px 30px rgb(255 255 255 / 75%);
+   margin-bottom: 20px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   text-transform: capitalize;
+   letter-spacing: 0.5px;
+}
+
+ .item p {
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+    letter-spacing: 1px;
+}  
+.item-btn{
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    cursor: pointer;
+}
+.item-btn i:hover{
+    color: rgba(255, 0, 0, 0.919);
+}
+.item.completed p{
+    text-decoration: line-through;
+    color: #11111180;
+}
